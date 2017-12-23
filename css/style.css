@@ -1,0 +1,49 @@
+#login_section {
+    margin-top: 60px;
+}
+
+.list_view_container {
+    margin-top: 60px;
+}
+
+.list_view_container p {
+    color: #bbb;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.words_table {
+    margin-top: 80px;
+}
+
+.btn.bottom-right {
+    float: right;
+    margin-top: 50px;
+
+    font-size: 1.2em;
+}
+
+.light {
+    color: #aaa;
+}
+
+#enter_word {
+    margin-top: 40px;
+
+    border-radius: 20px;
+}
+
+#enter_word p {
+    margin-bottom: 40px;
+}
+
+#enter_word #input_container {
+    margin: 0 auto;
+    float: none;
+
+    margin-bottom: 60px;
+}
+
+#enter_word #input_container input {
+    font-size: 1.2em;
+}
