@@ -1,3 +1,8 @@
+# woorden_leren
+
+This is a website to learn words primarily written in PHP and JavaScript.
+
+
 # Config file structure
 An example config file:
 
