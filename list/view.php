@@ -43,7 +43,15 @@ if (!$_GET) {
             <?php display_words($row, $conn); ?>
         <tbody>
     </table>
-    <a href="/list/prepare.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-success bottom-right">Study</a>
+    <a href="/list/prepare.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-success bottom-right">
+        <span class="glyphicon glyphicon-play"></span> Study
+    </a>
+    <a href="/list/edit.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-info bottom-right">
+        <span class="glyphicon glyphicon-edit"></span> Edit
+    </a>
+    <a href="/list/delete.php?id=<?php echo $row["id"]; ?>" type="button" class="btn btn-danger bottom-right">
+        <span class="glyphicon glyphicon-trash"></span> Delete
+    </a>
 </div>
 <?php
             $result->free();
@@ -57,7 +65,7 @@ include('../footer.php');
 
 
 function not_found() {
-    echo "<h1>List not found.</h1>";
+    echo '<h1 style="text-align: center;">List not found.</h1>';
     http_response_code(404);
 }
 

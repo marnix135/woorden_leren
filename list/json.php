@@ -39,7 +39,6 @@ function get_list($id, $conn) {
     $result->free();
 
     return $row;
-
 }
 
 function get_words($id, $conn) {
@@ -50,6 +49,7 @@ function get_words($id, $conn) {
     $rows=array();
 
     while ($row = $result->fetch_assoc()) {
+        unset($row["list_id"]);
         $rows[] = $row;
     }
 

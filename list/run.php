@@ -14,8 +14,10 @@ include('../header.php');
         <div id="enter_word" class="col-xs-12 col-sm-8 col-sm-offset-2">
             <div class="row">
                 <div class="col-lg-8" id="input_container">
-                    <h2 id="word1"></h2>
+                    <h1 id="word1"></h1>
                     <p id="translate_to" class="light"></p>
+                    <span class="light" id="right_answer_label" style="display: none;">Correct translation: </span>
+                    <h2 id="right_answer" style="display: none;"></h2>
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Translation" id="translation_input">
                         <span class="input-group-btn">
@@ -26,7 +28,7 @@ include('../header.php');
             </div>
 
             <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
                     <span id="progress-label">70% Complete</span>
                 </div>
             </div>
